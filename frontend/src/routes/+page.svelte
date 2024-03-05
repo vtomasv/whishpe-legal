@@ -91,9 +91,9 @@
 <header>
 	<h1 class="flex items-center justify-center mt-8 space-x-4 text-4xl font-bold">
 		<span>
-			<img class="w-20 h-20" src="/logo.svg" alt="Logo: a cloud whispering" />
+			<img class="w-20 h-20" src="/logo.svg" alt="Logo: a Colombara company" />
 		</span>
-		<span> Whishper </span>
+		<span> Colombara Audio </span>
 	</h1>
 	<h2 class="font-mono text-center text-md opacity-70">{data.randomSentence}</h2>
 </header>

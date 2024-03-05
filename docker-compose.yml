@@ -42,8 +42,10 @@ services:
       retries: 5
 
   whishper:
-    pull_policy: always
-    image: pluja/whishper:${WHISHPER_VERSION:-latest}
+    pull_policy: build
+    image: colombara/whishper-legal
+    build: .
+    #image: pluja/whishper:${WHISHPER_VERSION:-latest}
     env_file:
       - .env
     volumes:

@@ -23,7 +23,7 @@ if /i "%answer%"=="Y" (
 
 rem Get docker-compose.yml
 echo Getting the docker-compose.yml file from Github
-curl -o docker-compose.yml https://raw.githubusercontent.com/pluja/whishper/main/docker-compose.yml
+curl -o docker-compose.yml https://raw.githubusercontent.com/vtomasv/whishpe-legal/main/docker-compose.yml
 
 rem Get .env file
 if exist .env (
@@ -32,13 +32,13 @@ if exist .env (
   set /p answer=
   if /i "%answer%"=="Y" (
     echo Overwriting .env file
-    curl -o .env https://raw.githubusercontent.com/pluja/whishper/main/example.env
+    curl -o .env https://raw.githubusercontent.com/vtomasv/whishpe-legal/main/example.env
   ) else (
     echo Keeping the existing .env file
   )
 ) else (
   echo Getting the default .env file from Github
-  curl -o .env https://raw.githubusercontent.com/pluja/whishper/main/example.env
+  curl -o .env https://raw.githubusercontent.com/vtomasv/whishpe-legal/main/example.env
 )
 
 rem Create directories
